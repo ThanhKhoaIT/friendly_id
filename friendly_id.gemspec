@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
 
   s.add_dependency 'activerecord', '>= 4.0.0'
+  s.add_dependency 'babosa', '1.0.2'
 
   s.add_development_dependency 'coveralls'
   s.add_development_dependency 'railties', '~> 4.0'

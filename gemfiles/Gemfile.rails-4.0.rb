@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gemspec path: '../'
 
+gem "babosa", "1.0.2"
 gem 'activerecord', '~> 4.0.13'
 gem 'railties', '~> 4.0.13'
 gem 'minitest', '~> 4.5.0'

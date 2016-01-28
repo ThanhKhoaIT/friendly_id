@@ -15,6 +15,7 @@ group :development, :test do
   platforms :ruby, :rbx do
     gem 'sqlite3'
     gem 'redcarpet'
+    gem "stringex"
   end
 
   platforms :rbx do

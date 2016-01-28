@@ -1,4 +1,5 @@
 # encoding: utf-8
+require "babosa"
 require "friendly_id/base"
 require "friendly_id/object_utils"
 require "friendly_id/configuration"
@@ -126,3 +127,4 @@ module FriendlyId
     "#{ActiveRecord::Base.table_name_prefix}friendly_id_"
   end
 end
+

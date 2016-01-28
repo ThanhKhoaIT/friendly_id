@@ -25,6 +25,7 @@ rescue NameError
 end
 
 require "mocha/setup"
+require "babosa"
 require "active_record"
 require 'active_support/core_ext/time/conversions'
 
