@@ -296,7 +296,7 @@ Github issue](https://github.com/norman/friendly_id/issues/185) for discussion.
     # You can override this method in your model if, for example, you only want
     # slugs to be generated once, and then never updated.
     def should_generate_new_friendly_id?
-      send(friendly_id_config.slug_column).nil? && !send(friendly_id_config.base).nil?
+      send(friendly_id_config.slug_column).blank? && !send(friendly_id_config.base).blank?
     end
 
     def resolve_friendly_id_conflict(candidates)
