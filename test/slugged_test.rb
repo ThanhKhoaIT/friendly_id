@@ -296,7 +296,7 @@ class UuidAsPrimaryKeyFindTest < TestCaseClass
 
     private
     def init_primary_key
-      self.uuid_key = SecureRandom.uuid
+      self.uuid_key = Time.current.to_i.to_s.last(6)
     end
   end
 
@@ -318,7 +318,7 @@ class UuidAsPrimaryKeyFindTest < TestCaseClass
   test "should handle a string that simply contains a UUID correctly" do
     with_instance_of(model_class) do |record|
       assert_raises(ActiveRecord::RecordNotFound) do
-        model_class.friendly.find "test-#{SecureRandom.uuid}"
+        model_class.friendly.find "test-#{Time.current.to_i.to_s.last(6)}"
       end
     end
   end
